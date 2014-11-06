@@ -15,7 +15,7 @@
   <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
   <dd><%= @show.price %></dd>
   <dt><strong><%= model_class.human_attribute_name(:image) %>:</strong></dt>
-  <dd><%= @show.image %></dd>
+  <dd><img src="<%= @show.image %>" style="width:300px" /></dd>
   <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
   <dd><%= @show.date %></dd>
 </dl>
