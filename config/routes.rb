@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  #Cela signifie que nous déclarons l'url /shows/1/book par exemple, et que les
+  #requêtes qui arrivent sur cette url en POST (début de ligne) serons traitées par la méthode book du controller shows
+  post 'shows/:id/book' => 'shows#book'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
