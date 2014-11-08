@@ -152,3 +152,5 @@ Pusher sur git
 - Installer gem:  $ bundle install ou bundle install --without production
 - Supprimer la partie "production" du fichier database.yml
 - Pusher sur heroku: $ git push heroku master
+  (penser à avoir pushé sur git avant)
+- Créer db en ligne:  heroku run rake db:create db:migrate db:seed
